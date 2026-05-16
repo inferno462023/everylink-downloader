@@ -88,7 +88,7 @@ export default function Home() {
     setSelectedRes('');
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/info', {
+      const response = await fetch('https://inferno462023-everylink-backend.hf.space/api/info', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
@@ -115,7 +115,7 @@ export default function Home() {
     setMessage('ဖိုင်ကို ဒေါင်းလုဒ်လုပ်နေပါပြီ... ခဏစောင့်ပေးပါ...');
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/download', {
+      const response = await fetch('https://inferno462023-everylink-backend.hf.space/api/download', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url, resolution: selectedRes }),
